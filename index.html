@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollyGlot - Perfect Translation Every Time</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="parrot">🦜</div>
+            <h1 class="logo">PollyGlot</h1>
+            <p class="tagline">Perfect Translation Every Time</p>
+        </div>
+
+        <div id="inputForm" class="form-container">
+            <div class="input-group">
+                <label class="input-label">Text to translate ✨</label>
+                <input type="text" class="text-input" id="textInput" placeholder="Enter text..." value="">
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">Select language ✨</label>
+                <div class="language-select">
+                    <label class="language-option">
+                        <input type="radio" name="language" value="fr" checked>
+                        <span class="flag fr-flag"></span>
+                        French
+                    </label>
+                    <label class="language-option">
+                        <input type="radio" name="language" value="es">
+                        <span class="flag es-flag"></span>
+                        Spanish
+                    </label>
+                    <label class="language-option">
+                        <input type="radio" name="language" value="ja">
+                        <span class="flag jp-flag"></span>
+                        Japanese
+                    </label>
+                </div>
+            </div>
+
+            <button class="translate-btn" onclick="translateText()">Translate</button>
+        </div>
+
+        <div id="resultForm" class="result-container">
+            <div class="result-group">
+                <label class="result-label">Original text ✨</label>
+                <div class="result-text" id="originalText">How are you?</div>
+            </div>
+
+            <div class="result-group">
+                <label class="result-label">Your translation ✨</label>
+                <div class="result-text" id="translatedText">Comment allez-vous?</div>
+            </div>
+
+            <button class="start-over-btn" onclick="startOver()">Start Over</button>
+        </div>
+    </div>
+
+    <script src="indx.js"></script>
+</body>
+</html>
