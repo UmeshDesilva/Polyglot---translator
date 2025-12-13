@@ -1,11 +1,11 @@
-function translateText() {
-    const text = document.getElementById('textInput').value;
-    const language = document.querySelector('input[name="language"]:checked').value;
-    const originalDisplay = document.getElementById('originalText');
-    const translatedDisplay = document.getElementById('translatedText');
+function translateText(){
+    const translateText = document.getElementById("textInput").value
+    const language = document.querySelector('input[name="language"]:checked').value
+    const originalDisplay = document.getElementById("originalText");
+    const translatedDisplay = document.getElementById("translatedText");
 
-    originalDisplay.textContent = text;
-
+    originalDisplay.textContent = translateText
+    
     // Simple hardcoded translations for demo
     let translation = '';
     if (language === 'fr') {
@@ -22,9 +22,5 @@ function translateText() {
     document.getElementById('resultForm').style.display = 'block';
 }
 
-function startOver() {
-    document.getElementById('inputForm').style.display = 'block';
-    document.getElementById('resultForm').style.display = 'none';
-    document.getElementById('textInput').value = 'How are you?';
-    document.querySelector('input[name="language"][value="fr"]').checked = true;
-}
+
+
